@@ -5,12 +5,14 @@ public class Activity2 {
 		// TODO Auto-generated method stub
         int arr[]= {10, 77, 10, 54, -11, 10};
         int sum=0;
-        for(int i=0;i<6;i++) {
-        	if(arr[i]==10) {
-        		sum=sum+arr[i];
+        int search_num=10;
+        int final_sum=30;
+        for(int num : arr) {
+        	if(num==search_num) {
+        		sum=sum+num;
         	}
         }
-        if(sum==30) {
+        if(sum==final_sum) {
         	System.out.println("True");
         }
         else {
