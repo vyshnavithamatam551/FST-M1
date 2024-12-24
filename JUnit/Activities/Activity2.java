@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 public class Activity2 {
 
 	@Test
-	public static void notEnoughFunds() {
+	public void notEnoughFunds() {
 		BankAccount bk=new BankAccount(9);
 		assertThrows(NotEnoughFundsException.class, () -> bk.withdraw(10));
 	}
 	
 	@Test
-	void enoughFunds() {
-	    BankAccount account = new BankAccount(100);
-	    assertDoesNotThrow(() -> account.withdraw(100));
+	public void enoughFunds() {
+	    BankAccount bk1 = new BankAccount(100);
+	    assertDoesNotThrow(() -> bk1.withdraw(100));
 	}
 }
